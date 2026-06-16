@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgba(21, 20, 20, 0.379);
+        }
+
+        table {
+            width: 60%;
+            margin-left: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <table cellspacing="10px" style="border: 1px solid; border-radius: 5px;">
+            <caption style="font-size: xx-large; font-weight: bolder;">SURVEY FORM</caption>
+            <tr>
+                <td>This questionnaire is part of a study of computer usuage, Your participation in this study is
+                    voluntary and your answers will form part of a statistical study and will not identify you as an
+                    individual.</td>
+            </tr>
+            <tr>
+                <td><label for="name" style="font-weight: bold;">Name:</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="name" id="name" placeholder="Enter Name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email" style="font-weight: bold;">Email:</label></td>
+            </tr>
+            <tr>
+                <td><input type="email" name="email" id="email" required placeholder="Enter Email"></td>
+            </tr>
+            <tr>
+                <td><label for="number" style="font-weight: bold;">Number:</label></td>
+            </tr>
+            <tr>
+                <td><input type="number" name="number" id="number" required placeholder="Select Age"></td>
+            </tr>
+            <tr>
+                <td><label for="level" style="font-weight: bold;">Skill Level</label></td>
+            </tr>
+            <tr>
+                <td><select name="level" id="level" required>
+                        <option value="">No knowledge</option>
+                        <option value="Expert">Expert</option>
+                        <option value="advanced">advanced</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Basic">Basic</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><label for="os" style="font-weight: bold;"> Which is your favorite OS?</label></td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="os" id="linux"><label for="linux">GNU/Linux</label><input type="radio"
+                        required name="os" id="Mac"><label for="Mac">Mac OS</label><input type="radio" name="os"
+                        id="Windows"><label for="Windows">Windows</label>
+                    <input type="radio" name="os" id="bsd"><label for="bsd">FreeBSD</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="hardware" style="font-weight: bold;">Which hardware do you own?</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="hardware" id="hardware1"><label for="hardware1">Desktop</label><br>
+                    <input type="checkbox" name="hardware" id="hardware2"><label for="hardware2">Laptop</label><br>
+                    <input type="checkbox" name="hardware" id="hardware3"><label for="hardware3">Mini-PC</label><br>
+                    <input type="checkbox" name="hardware" id="hardware4"><label for="hardware4">Server</label> <br>
+                    <input type="checkbox" name="hardware" id="hardware5"><label for="hardware5">Single Board
+                        Computer</label>
+                </td>
+            </tr>
+            <tr>
+                <td><textarea name="" id="" cols="80" rows="10" placeholder="Additional Details"></textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align: center;">
+                        <input
+                            style="background-color: rgba(0, 0, 255, 0.831); font-weight: bold;padding: 10px; padding-left: 10%;padding-right: 10%; border-radius: 5px;"
+                            type="submit" name="" id="">
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
